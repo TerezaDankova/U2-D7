@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        .jumbotron {
+            background: linear-gradient(90deg, rgba(58,180,61,0.7600083978904062) 0%, rgba(29,253,231,0.6087478936887255) 44%, rgba(69,252,111,0.7516050365458684) 100%);  
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+        .deal-of-the-week {
+            background-image: url('https://img.freepik.com/free-photo/wooden-plank-textured-background-material_53876-31378.jpg?w=2000');
+            height:100vh;
+            width: 100%;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .deal-of-the-week h1 {
+            color: bisque;
+            margin-top: 25px;
+            margin-bottom: 10%;
+            font-size: 4rem;
+        }
+       .welcome-summer {
+            background: linear-gradient(90deg, rgba(58,180,61,0.7600083978904062) 0%, rgba(252,194,69,0.7516050365458684) 14%, rgba(253,231,29,0.37065265559348737) 100%);
+            height:100vh;
+            width: 100%;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+       }
+       .welcome-summer h1 {
+            color: rgb(114, 107, 30);
+            margin-top: 25px;
+            margin-bottom: 10%;
+            font-size: 4rem;
+       }
+       .lorem {
+           font-size: 1.5rem;
+       }
+       .deal-of-the-day {
+            background: linear-gradient(90deg, rgba(58,161,180,0.7600083978904062) 0%, rgba(69,110,252,0.7516050365458684) 51%, rgba(29,30,253,0.8216330477503502) 100%);
+            width: 100%;
+       }
+       .deal-of-the-day h1 {
+           color:bisque
+       }
+       .deal-of-the-day div {
+           color: antiquewhite;
+       }
+       .testimonials {
+           background-color: aquamarine;
+           max-width: 100%;
+           height: auto;
+       }
+       .testimonials h1 {
+           color: rgb(73, 65, 54);
+       }
+       footer {
+           display: flex;
+           flex-direction: column;
+           background-color: rgb(54, 48, 48);
+           align-items: center;
+           color: azure;
+       }
+       .last-minute {
+        background-image: url('https://storage.googleapis.com/pod_public/1300/88149.jpg');
+            height:100vh;
+            width: 100%;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+       }
+       .last-minute h1 {
+        color: rgb(207, 205, 181);
+            margin-top: 25px;
+            margin-bottom: 50px;
+            font-size: 4rem;
+       }
+       .card-img-top {
+           height: 300px;
+           object-fit: cover;
+       }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="https://www.designmantic.com/blog/wp-content/uploads/2019/11/Travel-Logo-Ideas.png" alt="travel image" height="46" class="mr-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#deal-of-the-week-section">Deal of the week</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#welcome-summer-section">Welcome Summer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#deal-of-the-day-section">Deal Of the Day</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials-section">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#last-minute-section">Last minute</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+    <div class="jumbotron" id="home">
+        <h1 class="display-4">Hello, Travelers!</h1>
+        <p class="lead">Are you ready for your next vacation trip?</p>
+        <hr class="my-4">
+        <p>Chech out our page for some awesome vacation oportunities!!!</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+    </div>
+    <section class="deal-of-the-week" id="deal-of-the-week-section">
+        <h1>Deals of the Week</h1>  
+        <div class="container-fluid">
+           <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                <div class="card">
+                    <img class="card-img-top" src="https://media.istockphoto.com/photos/two-deckchairs-under-parasol-in-tropical-beach-at-sunset-picture-id956989068?k=20&m=956989068&s=612x612&w=0&h=seCKd-fEHzxhB8Eo5Mxj1T43mADeqvbyubX25LAkUzI=" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                <div class="card">
+                    <img class="card-img-top" src="https://media.istockphoto.com/photos/two-lounge-chairs-under-tent-on-beach-picture-id489833698?k=20&m=489833698&s=612x612&w=0&h=LXZw6D7iXLj9yCe9FW0ZED7K1hm00uXIS7Vn_0kC_is=" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.familyvacationcritic.com/wp-content/uploads/sites/19/2018/09/best-ideas-1280x640.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                <div class="card">
+                    <img class="card-img-top" src="https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dmFjYXRpb258ZW58MHx8MHx8&w=1000&q=80" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+        </div>   
+      </div>
+    </section>
+    <section class="welcome-summer shadow-lg p-3 mb-5 bg-white rounded" id="welcome-summer-section">
+        <h1>Welcome Summer</h1>  
+        <div class="container-fluid">
+           <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="card">
+                    <img class="card-img-top" src="https://media.istockphoto.com/photos/two-deckchairs-under-parasol-in-tropical-beach-at-sunset-picture-id956989068?k=20&m=956989068&s=612x612&w=0&h=seCKd-fEHzxhB8Eo5Mxj1T43mADeqvbyubX25LAkUzI=" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="card">
+                    <img class="card-img-top" src="https://media.istockphoto.com/photos/two-lounge-chairs-under-tent-on-beach-picture-id489833698?k=20&m=489833698&s=612x612&w=0&h=LXZw6D7iXLj9yCe9FW0ZED7K1hm00uXIS7Vn_0kC_is=" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.familyvacationcritic.com/wp-content/uploads/sites/19/2018/09/best-ideas-1280x640.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="card">
+                    <img class="card-img-top" src="https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dmFjYXRpb258ZW58MHx8MHx8&w=1000&q=80" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.clubagiaanna.gr/sites/default/files/img20180520174312_1200x1200.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+                <div class="card">
+                    <img class="card-img-top" src="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F210316134738-02-wisdom-project-summer.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+        </div>   
+      </div>
+    </section>
+    <section class="deal-of-the-day d-sm-none d-md-block" id="deal-of-the-day-section">
+        
+
+        <div class="container-fluid">
+        <h1>Deals of the Day!!</h1>  
+           <div class="row">
+            <div class="col-8">
+                <img src="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?cs=srgb&dl=pexels-pixabay-38238.jpg&fm=jpg" alt="vacation" style="max-width: 100%;">
+            </div>   
+            <div class="col-4">
+            <div class="lorem">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem maxime incidunt distinctio voluptatibus ad fugiat autem repellat enim? Animi numquam natus dolor, perspiciatis corrupti enim deserunt veniam quis quaerat obcaecati?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium itaque, illo illum earum animi cupiditate porro, voluptatum, quaerat eaque ipsum dicta. Veritatis, iusto eveniet! Accusamus enim dolor facere explicabo quod.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, facere reprehenderit laboriosam ipsa dicta veritatis ab tempora modi, deserunt debitis labore quia eveniet, illo in repudiandae? Voluptate perferendis atque veritatis.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In minima soluta saepe nesciunt, eos quod provident totam molestiae maiores! Rerum accusamus suscipit voluptate? Quisquam saepe aliquam beatae pariatur eum officia.
+
+            </div>
+            
+           </div>
+        </div>
+    </section>
+    <section class="last-minute" id="last-minute-section">
+        <h1>Last Minute Destinations</h1>  
+        <div class="container-fluid">
+           <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://media.istockphoto.com/photos/two-deckchairs-under-parasol-in-tropical-beach-at-sunset-picture-id956989068?k=20&m=956989068&s=612x612&w=0&h=seCKd-fEHzxhB8Eo5Mxj1T43mADeqvbyubX25LAkUzI=" alt="Card image cap">
+                    
+                  </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://media.istockphoto.com/photos/two-lounge-chairs-under-tent-on-beach-picture-id489833698?k=20&m=489833698&s=612x612&w=0&h=LXZw6D7iXLj9yCe9FW0ZED7K1hm00uXIS7Vn_0kC_is=" alt="Card image cap">
+                    
+                  </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.familyvacationcritic.com/wp-content/uploads/sites/19/2018/09/best-ideas-1280x640.jpg" alt="Card image cap">
+                   
+                  </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dmFjYXRpb258ZW58MHx8MHx8&w=1000&q=80" alt="Card image cap">
+                    
+                  </div>
+            </div>
+        
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F210316134738-02-wisdom-project-summer.jpg" alt="Card image cap">
+                   
+                  </div>
+            </div>
+        </div>   
+      </div>
+    </section>
+   
+    <section class="testimonials" id="testimonials-section">
+        
+
+        <div class="container-fluid">
+        <h1>Read Our Testimonials!!</h1>  
+        <div class="row">
+            <div class="col-4">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                       <img src="https://www.faceapp.com/static/img/content/compare/beard-example-after@3x.jpg" width="150px" height="150px">
+                      <h1 class="display-4">Testimonial 1</h1>
+                      <p class="lead">Awesome!! Best vacation ever!!</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <img src="https://www.face.eu/wp-content/uploads/2018/09/Torbjorn-Larsson.jpg" width="150px" height="150px">
+                      <h1 class="display-4">Testimonial 2</h1>
+                      <p class="lead">Awesome!! Best vacation ever!!</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <img src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW4lMjBmYWNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80" width="150px" height="150px">
+                      <h1 class="display-4">Testimonial 3</h1>
+                      <p class="lead">Awesome!! Best vacation ever!!</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p>Our Company Information : Information</p>
+        <button type="button" class="btn btn-info">Contact Us</button>
+        
+      </footer>
+</body>
+</html>
